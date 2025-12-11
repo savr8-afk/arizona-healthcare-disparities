@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Barriers: Arizona Healthcare Disparities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav li {
+            margin: 0 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #2a5298;
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+        }
+
+        h4 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+        }
+
+        .callout {
+            background: #f0f4ff;
+            border-left: 5px solid #667eea;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .quote {
+            background: #fff9e6;
+            border-left: 5px solid #ffd700;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        .solution-box {
+            background: white;
+            border: 2px solid #667eea;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .citation {
+            color: #666;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .intro-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin: 2rem 0;
+            text-align: justify;
+        }
+
+        .evidence {
+            background: #e8f5e9;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            font-size: 0.95rem;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#issue">The Issue</a></li>
+            <li><a href="#why">Why It Matters</a></li>
+            <li><a href="#worked">What Has Worked</a></li>
+            <li><a href="#failed">What Hasn't Worked</a></li>
+            <li><a href="#solutions">My Solutions</a></li>
+            <li><a href="#sources">Sources</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Breaking Barriers: Addressing Healthcare Disparities in Arizona</h1>
+        <p>Investigating the root causes of healthcare inequities and proposing actionable solutions for all Arizonans</p>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <div class="intro-text">
+                Healthcare access shouldn't depend on where you live, the color of your skin, or how much money you make—yet in Arizona, it does. Despite being one of the fastest-growing states in the nation, Arizona faces persistent healthcare disparities that disproportionately affect Native American communities, rural residents, Hispanic families, and other vulnerable populations. From maternal mortality rates that exceed national averages to diabetes rates among Native Americans that are triple those of white Arizonans, these disparities represent both a public health crisis and a civil rights issue. Through this service learning project, I investigated the root causes of healthcare inequities in Arizona, examined what policies have and haven't worked, and developed recommendations for creating a more equitable healthcare system. This website presents my research findings, demonstrates connections to AP Government principles of federalism and equal protection, and proposes actionable solutions to ensure all Arizonans have access to quality healthcare regardless of their background or zip code.
+            </div>
+
+            <h3>Quick Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">9-11%</div>
+                    <div class="stat-label">of Arizonans currently uninsured (could rise to 18-20% with federal cuts)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">21.4%</div>
+                    <div class="stat-label">of Native Americans have diabetes vs. 8.0% of white Arizonans</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">36%</div>
+                    <div class="stat-label">of rural working-age Arizonans rely on Medicaid vs. 17% urban</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">of maternal deaths are preventable</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">22</div>
+                    <div class="stat-label">federally recognized tribes in Arizona</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">7.4M</div>
+                    <div class="stat-label">Arizonans, with nearly 50% belonging to racial/ethnic minority groups</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="issue">
+            <h2>The Issue</h2>
+            
+            <h3>What are Healthcare Disparities?</h3>
+            <p>Healthcare disparities are preventable differences in the burden of disease, injury, violence, or opportunities to achieve optimal health experienced by socially disadvantaged populations. In Arizona, these disparities manifest as differences in access to healthcare services, quality of care received, and health outcomes across racial, ethnic, geographic, and socioeconomic lines.</p>
+
+            <h3>The Reality in Arizona</h3>
+
+            <h4>Geographic Disparities</h4>
+            <p>Arizona's vast geography creates stark healthcare access differences. Rural counties face critical provider shortages, with residents often traveling 50+ miles for specialty care. The 2024 Arizona State Health Assessment reveals that while 62% of Arizonans live in Maricopa and Pima counties (Phoenix and Tucson), rural communities experience significantly higher mortality rates and lower life expectancy. Apache and Navajo counties, with large Native American populations, have life expectancies 8-9 years shorter than Santa Cruz County (Arizona Department of Health Services, 2024).</p>
+
+            <h4>Racial and Ethnic Disparities</h4>
+            <p>The CDC's 2018 study found alarming health disparities among Arizona's American Indian/Alaska Native population compared to white residents: diabetes rates nearly triple (21.4% vs. 8.0%), obesity rates significantly higher (76.7% vs. 63.2%), along with lower educational attainment, lower income, and higher unemployment (Centers for Disease Control and Prevention, 2018). Hispanic Arizonans face barriers including language difficulties, lack of health insurance, and cost barriers that prevent them from seeking timely care. The U.S. Commission on Civil Rights found that Native American children experience persistent high uninsured rates despite recent eligibility expansions (U.S. Commission on Civil Rights, Arizona Advisory Committee, 2024).</p>
+
+            <h4>Maternal and Infant Health Crisis</h4>
+            <p>Each year, approximately 70 Arizona mothers die within a year of their pregnancy—90% of these deaths are preventable. Nearly 60% are Hispanic, Black, or Native American mothers. Mental health conditions are the leading cause of pregnancy-related deaths. Infant mortality reached a decade-high in 2022 at 6 deaths per 1,000 live births, with Black and Native American infants consistently experiencing higher mortality rates (Arizona Department of Health Services, 2024).</p>
+
+            <h4>Access Barriers</h4>
+            <p>Research by Galvan et al. (2022) found that 13.5% of Arizona adults lack healthcare coverage, 28.7% lack a personal doctor, and 14.1% cite medical costs as barriers to care. Young adults (18-34), those with high school education or less, and Hispanic persons are most likely to face these barriers. The study also revealed significant gaps in dental care access, with Hispanic Arizonans less likely to report annual dental checkups (Galvan et al., 2022).</p>
+
+            <div class="callout">
+                <h4>Community Voices</h4>
+                <p>The 2024 State Health Assessment included listening sessions with 224 community members from 10 centered populations. Key themes emerged:</p>
+                <ul>
+                    <li><strong>Native American communities</strong> emphasized that "health is culture" and expressed the need for Native providers and culturally appropriate care</li>
+                    <li><strong>Hispanic families</strong> stressed the importance of after-hours care for working parents and described financial stress as a major health determinant</li>
+                    <li><strong>Rural residents</strong> cited transportation barriers as preventing access to specialty care</li>
+                    <li><strong>Refugees</strong> identified language barriers and separation from family as critical health challenges</li>
+                    <li><strong>LGBTQIA+ individuals</strong> described difficulty finding affirming healthcare providers</li>
+                </ul>
+                <p class="citation">(Arizona Department of Health Services, 2024)</p>
+            </div>
+        </section>
+
+        <section class="section" id="why">
+            <h2>Why It Matters</h2>
+
+            <h3>Impact on Individuals and Families</h3>
+            <p>Healthcare disparities aren't just statistics—they represent real people facing preventable suffering, financial hardship, and premature death. When a Native American mother dies from pregnancy complications that could have been prevented with adequate prenatal care, a family loses a loved one unnecessarily. When rural Arizonans with diabetes can't access specialty care and develop complications requiring amputation, lives are forever changed. When refugee families can't communicate with healthcare providers due to language barriers, treatable conditions become life-threatening emergencies.</p>
+
+            <h3>Economic Consequences</h3>
+            <p>Healthcare disparities impose enormous economic costs on Arizona. When people lack access to preventive care, they delay treatment until conditions become emergencies, resulting in more expensive hospital care. Dr. Daniel Derksen warns that if federal Medicaid cuts force Arizonans off coverage, hospitals will face increased "uncompensated care" costs—"the kind of math that closes our rural and critical access hospitals" (Derksen, 2024). This creates a vicious cycle: hospital closures further reduce healthcare access, worsening disparities and increasing long-term costs.</p>
+
+            <h3>Constitutional and Civil Rights Issues</h3>
+            <p>Healthcare disparities raise fundamental questions about equal protection under the Fourteenth Amendment. The U.S. Commission on Civil Rights explicitly frames pediatric healthcare access as a civil rights concern, finding that racial and ethnic minority families face systematic barriers that violate principles of equal treatment (U.S. Commission on Civil Rights, Arizona Advisory Committee, 2024). When government policies result in Native American children having diabetes at three times the rate of white children, or when Black mothers die at higher rates from preventable pregnancy complications, it suggests failures in ensuring equal protection and opportunity for all citizens.</p>
+
+            <h3>Public Health Implications</h3>
+            <p>Healthcare disparities threaten the health of entire communities, not just affected individuals. Lower vaccination rates in underserved communities increase disease outbreak risks for everyone. When pregnant women lack prenatal care, resulting in higher infant mortality, it impacts Arizona's overall population health and future workforce. Chronic diseases that go unmanaged due to access barriers create long-term public health challenges and healthcare system strain.</p>
+
+            <div class="callout">
+                <h3>Connection to AP Government Principles</h3>
+                
+                <h4>Federalism in Action</h4>
+                <p>Healthcare disparities illustrate tensions inherent in federalism—the division of power between state and federal governments. Arizona depends on federal Medicaid matching funds but maintains state control over eligibility and program design. The state's trigger law would eliminate Medicaid expansion if federal funding drops below 80%, demonstrating how state programs remain vulnerable to federal policy changes. This exemplifies ongoing debates about which level of government can most effectively address healthcare access (Derksen, 2024).</p>
+
+                <h4>Civil Rights and Equal Protection</h4>
+                <p>Persistent health disparities among racial and ethnic minorities connect to civil rights principles examined in Unit 3 of AP Government. Equal protection requires government to not discriminate and to remedy past discrimination, yet health outcome gaps suggest ongoing civil rights failures. The question becomes: what affirmative steps must government take to ensure equal health opportunities?</p>
+
+                <h4>Bureaucratic Implementation</h4>
+                <p>The gap between policy intent and actual outcomes illustrates challenges of bureaucratic implementation. Despite expanded eligibility, Native American children remain uninsured at high rates due to complicated enrollment processes, lack of outreach, and coordination failures between federal IHS, state Medicaid, and tribal health programs (U.S. Commission on Civil Rights, Arizona Advisory Committee, 2024).</p>
+            </div>
+        </section>
+
+        <section class="section" id="worked">
+            <h2>What Has Worked</h2>
+
+            <div class="solution-box">
+                <h3>Medicaid Expansion Under the Affordable Care Act</h3>
+                <p>Arizona's participation in Medicaid expansion has been one of the most effective interventions for reducing healthcare disparities. Healthcare providers note that expanded access through the ACA "has made a huge improvement in the health of state residents," allowing more people to access preventive healthcare before chronic conditions progress (Derksen, 2024). Arizona's uninsured rate dropped from 18-20% pre-ACA to 9-11% currently, with particularly significant gains among low-income adults and rural populations.</p>
+            </div>
+
+            <div class="solution-box">
+                <h3>American Indian Medical Home (AIMH) Program</h3>
+                <p>Arizona's AIMH Program represents a groundbreaking state-tribal partnership that demonstrates how culturally tailored approaches can address healthcare disparities. As the first program of its kind nationally, AIMH provides Primary Care Case Management, diabetes education, and care coordination specifically for American Indian/Alaska Native Medicaid members. The program uses 100% federal funding to reimburse IHS and Tribal 638 facilities on a per-member-per-month basis for enhanced services including 24-hour call lines and care coordination. By working within existing tribal health infrastructure while providing additional resources, AIMH respects tribal sovereignty while addressing health disparities (Arizona Health Care Cost Containment System, n.d.).</p>
+            </div>
+
+            <div class="solution-box">
+                <h3>Telehealth Expansion</h3>
+                <p>Galvan et al. (2022) recommend leveraging telehealth/telemedicine in rural and urban underserved communities as a promising approach to address provider shortages and geographic barriers. The COVID-19 pandemic accelerated telehealth adoption, demonstrating its potential to expand access, though equity concerns remain regarding broadband connectivity in tribal jurisdictions and rural areas.</p>
+            </div>
+
+            <div class="solution-box">
+                <h3>Community Health Workers</h3>
+                <p>The expansion of community health worker programs shows promise in addressing cultural and linguistic barriers. Community health workers who share cultural backgrounds and languages with the populations they serve can build trust, provide culturally appropriate health education, and help navigate complex healthcare and insurance systems.</p>
+            </div>
+
+            <div class="solution-box">
+                <h3>Maternal Mortality Review Committee</h3>
+                <p>Arizona's Maternal Mortality Review Committee demonstrates effective use of data to drive policy improvements. By systematically reviewing maternal deaths, the committee identified mental health conditions as the leading cause of pregnancy-related deaths and developed ten evidence-based strategies to prevent future deaths, including improving access to behavioral health services and expanding postpartum coverage (Arizona Department of Health Services, 2024).</p>
+            </div>
+        </section>
+
+        <section class="section" id="failed">
+            <h2>What Hasn't Worked</h2>
+
+            <h3>Chronic Underfunding of Indian Health Service</h3>
+            <p>Despite legal obligations to provide healthcare to tribal members through treaties, the Indian Health Service remains chronically underfunded. This forces many Native Americans to rely on understaffed facilities with limited specialty services or to seek care through other systems where they face barriers. The persistent health disparities among Native populations despite IHS existence demonstrates that underfunded programs cannot adequately address healthcare needs.</p>
+
+            <h3>Fragmented Insurance and Enrollment Systems</h3>
+            <p>The U.S. Commission on Civil Rights identified Arizona's "complicated insurance system" as a major barrier to healthcare access. Multiple programs (AHCCCS, KidsCare, Medicare, IHS, private insurance) with different eligibility criteria, enrollment processes, and covered services create confusion. High turnover among case managers who help families navigate these systems further compounds problems, leading to eligible individuals remaining uninsured (U.S. Commission on Civil Rights, Arizona Advisory Committee, 2024).</p>
+
+            <h3>Provider Shortage in Rural and Underserved Areas</h3>
+            <p>Despite various incentive programs, Arizona faces critical shortages of healthcare providers in rural areas and on tribal reservations. The shortage extends beyond primary care to specialists, dentists, mental health providers, and culturally competent providers who speak patients' languages or understand their cultural contexts. Without addressing root causes—medical school debt, professional isolation, lack of infrastructure—incentive programs alone haven't solved the problem.</p>
+
+            <h3>Limited Dental Coverage for Adults</h3>
+            <p>While children have access to dental benefits through AHCCCS and KidsCare, adult dental coverage remains severely limited. Community listening sessions revealed that refugees, low-income adults, and seniors frequently lack access to dental care, leading to preventable oral health problems that affect overall health. The connection between oral health and conditions like diabetes and heart disease makes this gap particularly problematic.</p>
+
+            <h3>Inadequate Language Access Services</h3>
+            <p>Despite Arizona's linguistic diversity (over 25% of households speak languages other than English), interpretation and translation services remain inadequate across healthcare settings. Refugees and Hispanic families report difficulty communicating with providers, understanding medical instructions, and navigating insurance systems. This language barrier leads to delayed care, medication errors, and poor health outcomes (Arizona Department of Health Services, 2024).</p>
+
+            <h3>One-Size-Fits-All Approaches</h3>
+            <p>Many healthcare programs fail to account for cultural differences in how communities understand health and wellness. Native American community members emphasized that "health is culture" and includes spiritual and traditional practices that Western medicine often ignores. Programs that don't respect cultural beliefs or provide culturally appropriate care see lower utilization and worse outcomes (Arizona Department of Health Services, 2024).</p>
+        </section>
+
+        <section class="section" id="solutions">
+            <h2>My Solutions & Recommendations</h2>
+
+            <div class="solution-box">
+                <h3>1. Protect and Expand Medicaid Coverage</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Rising uninsured rates, particularly in rural areas</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Arizona must protect existing Medicaid expansion and resist federal efforts to cut funding. Given that 36% of rural working-age Arizonans rely on Medicaid, cuts would devastate rural healthcare access and force hospital closures. The state should:</p>
+                <ul>
+                    <li>Eliminate the trigger law that would end Medicaid expansion if federal matching drops below 80%</li>
+                    <li>Expand postpartum Medicaid coverage from 60 days to 12 months to address maternal mortality</li>
+                    <li>Simplify enrollment processes and increase outreach to eligible but unenrolled populations</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> Medicaid expansion reduced Arizona's uninsured rate from 18-20% to 9-11%, with healthcare providers noting it "has made a huge improvement in the health of state residents" (Derksen, 2024).
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <h3>2. Increase Funding for Culturally Tailored Programs</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Health disparities among racial and ethnic minorities</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Significantly expand funding for programs like the American Indian Medical Home that demonstrate success in addressing disparities through culturally appropriate care. Develop similar models for other populations:</p>
+                <ul>
+                    <li>Hispanic Medical Home programs with bilingual providers and culturally appropriate health education</li>
+                    <li>LGBTQIA+ affirming care centers with providers trained in trans-fluency</li>
+                    <li>Refugee health navigators who speak multiple languages and understand immigration-related trauma</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> The AIMH Program, first of its kind nationally, demonstrates how state-tribal partnerships using culturally tailored approaches can effectively address healthcare disparities while respecting sovereignty (Arizona Health Care Cost Containment System, n.d.).
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <h3>3. Address Provider Shortages Through Comprehensive Workforce Development</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Lack of healthcare providers in rural areas and shortage of culturally competent providers</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Implement a multi-pronged approach to increase healthcare workforce:</p>
+                <ul>
+                    <li>Expand loan forgiveness programs for providers serving in Health Professional Shortage Areas</li>
+                    <li>Create "grow your own" programs recruiting students from underserved communities into healthcare careers</li>
+                    <li>Partner with tribal colleges and universities to train Native American healthcare providers</li>
+                    <li>Require cultural competency training for all providers serving Medicaid populations</li>
+                    <li>Expand scope of practice for nurse practitioners and physician assistants in rural areas</li>
+                    <li>Increase medical residency slots with rural and underserved community rotations</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> The U.S. Commission on Civil Rights identified provider shortages as a critical threat widening disparities in access to routine and specialty care, while community members emphasized the importance of providers sharing cultural identities (U.S. Commission on Civil Rights, Arizona Advisory Committee, 2024).
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <h3>4. Expand Comprehensive Language Access Services</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Language barriers preventing access to care for limited English proficiency populations</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Mandate and fund comprehensive language access across all healthcare settings:</p>
+                <ul>
+                    <li>Require all AHCCCS providers to offer professional interpretation (not family members) in top 15 languages</li>
+                    <li>Translate all vital healthcare documents and patient education materials</li>
+                    <li>Provide after-hours language access for 24-hour nurse lines</li>
+                    <li>Train bilingual community health workers to serve as health navigators</li>
+                    <li>Create language access compliance monitoring with consequences for violations</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> Over 25% of Arizona households speak languages other than English, with refugees and Hispanic families reporting language barriers prevent communication with providers and navigation of insurance systems (Arizona Department of Health Services, 2024).
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <h3>5. Leverage Telehealth to Expand Access</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Geographic barriers to specialty care in rural areas</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Systematically expand telehealth while addressing equity concerns:</p>
+                <ul>
+                    <li>Make pandemic-era telehealth flexibilities permanent, including payment parity</li>
+                    <li>Invest in broadband infrastructure on tribal lands and rural communities</li>
+                    <li>Provide devices and tech support for populations lacking access</li>
+                    <li>Train providers in culturally appropriate telehealth delivery</li>
+                    <li>Develop hybrid models combining telehealth with periodic in-person visits</li>
+                    <li>Create mobile health clinics equipped with telemedicine technology</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> Galvan et al. recommend "leveraging telehealth/telemedicine in rural and urban underserved communities" as an evidence-based approach to address provider shortages (Galvan et al., 2022).
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <h3>6. Establish Coordinated Care Navigation System</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Fragmented insurance systems and bureaucratic complexity</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Create a unified care navigation system to help Arizonans access services:</p>
+                <ul>
+                    <li>Establish a single point of contact for healthcare enrollment assistance</li>
+                    <li>Deploy community health workers in every underserved community</li>
+                    <li>Reduce case manager caseloads to allow meaningful support</li>
+                    <li>Create shared data systems allowing coordination across programs</li>
+                    <li>Provide specialized navigators for complex populations (foster youth, refugees, individuals with disabilities)</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> Community listening sessions emphasized that "high caseloads and staff turnover lower the quality of care from case managers, navigators, and healthcare providers," while the Commission on Civil Rights identified Arizona's "complicated insurance system" as a major barrier (Arizona Department of Health Services, 2024; U.S. Commission on Civil Rights, Arizona Advisory Committee, 2024).
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <h3>7. Address Social Determinants of Health</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Poverty, housing instability, food insecurity, and transportation barriers that create health disparities</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Implement health-in-all-policies approach:</p>
+                <ul>
+                    <li>Expand medical transportation services, particularly in rural areas</li>
+                    <li>Provide housing assistance recognizing stable housing as health necessity</li>
+                    <li>Increase SNAP benefits and support for food banks</li>
+                    <li>Create partnerships between healthcare providers and social services for warm handoffs</li>
+                    <li>Screen all patients for social needs and connect to resources</li>
+                    <li>Invest in safe, walkable communities with parks and recreation facilities</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> The State Health Assessment found that "economic instability can impact almost every health topic" and that "transportation, housing, and mental health support are top priorities to address health challenges" according to community members (Arizona Department of Health Services, 2024).
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <h3>8. Expand Mental Health and Substance Use Treatment</h3>
+                <h4>Problem Addressed:</h4>
+                <p>Mental health crisis contributing to maternal mortality, suicide, and health disparities</p>
+                
+                <h4>Recommendation:</h4>
+                <p>Dramatically expand mental health infrastructure:</p>
+                <ul>
+                    <li>Increase funding for community mental health centers in every county</li>
+                    <li>Integrate behavioral health into primary care settings</li>
+                    <li>Expand crisis intervention services and make 988 suicide hotline more robust</li>
+                    <li>Provide trauma-informed care training for all providers</li>
+                    <li>Address stigma through public education campaigns</li>
+                    <li>Ensure mental health parity in insurance coverage enforcement</li>
+                </ul>
+                
+                <div class="evidence">
+                    <strong>Evidence:</strong> Mental health conditions are the leading cause of pregnancy-related deaths in Arizona, and community listening sessions across all populations identified mental health as a top priority (Arizona Department of Health Services, 2024).
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="sources">
+            <h2>Sources</h2>
+            
+            <div style="margin-left: 2rem; line-height: 2;">
+                <p>Arizona Department of Health Services. (2024). <em>Arizona State Health Assessment 2024</em>. https://www.azdhs.gov/documents/operations/strategic-initiatives/arizona-state-health-assessment-2024.pdf</p>
+                
+                <p>Arizona Health Care Cost Containment System. (n.d.). <em>American Indian Medical Home</em>. https://www.azahcccs.gov/AmericanIndians/AmericanIndianMedicalHome/</p>
+                
+                <p>Centers for Disease Control and Prevention. (2018). Health disparities among American Indians/Alaska Natives—Arizona, 2017. <em>Morbidity and Mortality Weekly Report</em>, <em>67</em>(47), 1314-1318. https://www.cdc.gov/mmwr/volumes/67/wr/mm6747a4.htm</p>
+                
+                <p>Derksen, D. (2024, December 16). Thousands of Arizonans are at risk of losing health coverage if Trump cuts Medicaid. <em>Arizona Center for Rural Health</em>. https://crh.arizona.edu/news/thousands-arizonans-are-risk-losing-health-coverage-if-trump-cuts-medicaid</p>
+                
+                <p>Galvan, S. M., Kennedy, W., Bastani, R., & Tseng, C. H. (2022). Disparities of access, use, and barriers to seeking health care services in Arizona. <em>Journal of Community Health</em>, <em>47</em>(2), 338-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC8974357/</p>
+                
+                <p>U.S. Commission on Civil Rights, Arizona Advisory Committee. (2024). <em>Civil Rights and Disparities in Pediatric Health Care Access for Racial and Ethnic Minority Families in Arizona</em>. https://www.usccr.gov/news/2024/arizona-advisory-committee-releases-report-examining-disparities-access-and-quality</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Breaking Barriers: Arizona Healthcare Disparities Service Learning Project</p>
+        <p>AP U.S. Government and Politics | 2024-2025</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active class to nav links on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
